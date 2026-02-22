@@ -3,25 +3,25 @@ import { Section } from '../layout/Section';
 
 const VerticalFeatures = () => (
   <Section
-    title="Your title here"
-    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus malesuada nisi tellus, non imperdiet nisi tempor at."
+    title="A Website Built to Bring You Customers — Not Headaches"
+    description="You shouldn’t have to worry about design, hosting, updates, or whether your site actually converts visitors into customers."
   >
     <VerticalFeatureRow
-      title="Your title here"
-      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse bibendum, nunc non posuere consectetur, justo erat semper enim, non hendrerit dui odio id enim."
+      title="Turn Visitors Into Customers"
+      description="Your website isn’t just an online brochure — it’s your best salesperson."
       image="/assets/images/feature.svg"
       imageAlt="First feature alt text"
     />
     <VerticalFeatureRow
-      title="Your title here"
-      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse bibendum, nunc non posuere consectetur, justo erat semper enim, non hendrerit dui odio id enim."
+      title="Built to Support Your Growth"
+      description="As your business grows, your website should keep up — not hold you back."
       image="/assets/images/feature2.svg"
       imageAlt="Second feature alt text"
       reverse
     />
     <VerticalFeatureRow
-      title="Your title here"
-      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse bibendum, nunc non posuere consectetur, justo erat semper enim, non hendrerit dui odio id enim."
+      title="Launch With Confidence"
+      description="From launch day to long after, your website will be something you’re proud to share."
       image="/assets/images/feature3.svg"
       imageAlt="Third feature alt text"
     />

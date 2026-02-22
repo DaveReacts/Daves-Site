@@ -1,17 +1,17 @@
-import { Meta } from '../layout/Meta';
-import { AppConfig } from '../utils/AppConfig';
+import type { ReactNode } from 'react';
+
 import { Banner } from './Banner';
 import { Footer } from './Footer';
-import { Hero } from './Hero';
-import { Sponsors } from './Sponsors';
-import { VerticalFeatures } from './VerticalFeatures';
+import { Header } from './Header';
 
-const Base = () => (
+type BaseProps = {
+  children: ReactNode;
+};
+
+const Base = ({ children }: BaseProps) => (
   <div className="text-gray-600 antialiased">
-    <Meta title={AppConfig.title} description={AppConfig.description} />
-    <Hero />
-    <Sponsors />
-    <VerticalFeatures />
+    <Header />
+    {children}
     <Banner />
     <Footer />
   </div>
