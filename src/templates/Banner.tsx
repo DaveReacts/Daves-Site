@@ -10,7 +10,7 @@ const Banner = () => (
       title="Ready for a headache-free website?"
       button={
         <Link href="/contact">
-          <Button>Contact Us</Button>
+          <Button>Contact</Button>
         </Link>
       }
     />

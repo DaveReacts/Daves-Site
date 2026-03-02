@@ -18,7 +18,7 @@ const Hero = () => (
         description="Get a website you don’t have to think about"
         button={
           <Link href="/contact">
-            <Button xl>Contact Us</Button>
+            <Button xl>Contact</Button>
           </Link>
         }
       />
