@@ -8,11 +8,13 @@ const FORMSPREE_ENDPOINT = 'https://formspree.io/f/mnjbrklb';
 const ContactForm = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [hasSubmitted, setHasSubmitted] = useState(false);
+  const [hasError, setHasError] = useState(false);
 
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     setIsSubmitting(true);
     setHasSubmitted(false);
+    setHasError(false);
 
     const form = event.currentTarget;
     const data = new FormData(form);
@@ -30,10 +32,10 @@ const ContactForm = () => {
         setHasSubmitted(true);
         form.reset();
       } else {
-        console.error('Formspree error', await response.text());
+        setHasError(true);
       }
     } catch (error) {
-      console.error('Network error', error);
+      setHasError(true);
     } finally {
       setIsSubmitting(false);
     }
@@ -124,6 +126,13 @@ const ContactForm = () => {
             <p className="text-sm text-green-700">
               Thanks for reaching out — I&apos;ll get back to you as soon as I
               can.
+            </p>
+          )}
+
+          {hasError && (
+            <p className="text-sm text-red-600">
+              Sorry, there was a problem sending your message. Please try again
+              in a moment, or email me directly.
             </p>
           )}
         </form>
