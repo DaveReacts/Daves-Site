@@ -9,16 +9,11 @@ const Hero = () => (
   <Background color="bg-gray-100">
     <Section yPadding="pt-20 pb-32">
       <HeroOneButton
-        title={
-          <>
-            {'Need a website that just '}
-            <span className="text-primary-500">works?</span>
-          </>
-        }
-        description="Get a website you don’t have to think about"
+        title={<>{'Simple Websites for Local Businesses'}</>}
+        description="Hi, I'm Dave — a freelance web developer building my portfolio and helping a few local businesses get a clean, modern website at no upfront cost"
         button={
           <Link href="/contact">
-            <Button xl>Contact</Button>
+            <Button xl>Get Started</Button>
           </Link>
         }
       />
