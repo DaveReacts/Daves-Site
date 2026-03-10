@@ -10,7 +10,7 @@ const Hero = () => (
     <Section yPadding="pt-20 pb-32">
       <HeroOneButton
         title={<>{'Simple Websites for Local Businesses'}</>}
-        description="Hi, I'm Dave — a freelance web developer building my portfolio and helping a few local businesses get a clean, modern website at no upfront cost"
+        description="Hi, I'm Dave — a freelance web developer helping local businesses get clean, modern websites while I build my portfolio."
         button={
           <Link href="/contact">
             <Button xl>Get Started</Button>
