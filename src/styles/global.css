@@ -3,3 +3,11 @@
 @tailwind components;
 
 @tailwind utilities;
+
+.hero-bg {
+	background-image: url('/hero-bg.png');
+	background-size: cover;
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	background-color: #f3f4f6;
+}

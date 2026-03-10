@@ -6,7 +6,7 @@ import { HeroOneButton } from '../hero/HeroOneButton';
 import { Section } from '../layout/Section';
 
 const Hero = () => (
-  <Background color="bg-gray-100">
+  <Background color="hero-bg">
     <Section yPadding="pt-20 pb-32">
       <HeroOneButton
         title={<>{'Simple Websites for Local Businesses'}</>}
