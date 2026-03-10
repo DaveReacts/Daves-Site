@@ -1,5 +1,6 @@
 import { Hero } from '@/templates/Hero';
 import { HowItWorks } from '@/templates/HowItWorks';
+import { WhatsIncluded } from '@/templates/WhatsIncluded';
 
 import { Meta } from '../layout/Meta';
 import { Base } from '../templates/Base';
@@ -11,6 +12,7 @@ const Index = () => (
     <Base>
       <Hero />
       <HowItWorks />
+      <WhatsIncluded />
     </Base>
   </>
 );

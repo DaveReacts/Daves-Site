@@ -27,6 +27,14 @@ const NavbarTwoColumns = (props: INavbarProps) => (
         .navbar :global(li:not(:last-child)) {
           @apply mr-5;
         }
+
+        .navbar :global(a) {
+          @apply transition-colors duration-150;
+        }
+
+        .navbar :global(a:hover) {
+          @apply text-primary-500;
+        }
       `}
     </style>
   </div>
