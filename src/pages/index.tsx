@@ -1,5 +1,5 @@
 import { Hero } from '@/templates/Hero';
-import { VerticalFeatures } from '@/templates/VerticalFeatures';
+import { HowItWorks } from '@/templates/HowItWorks';
 
 import { Meta } from '../layout/Meta';
 import { Base } from '../templates/Base';
@@ -10,7 +10,7 @@ const Index = () => (
     <Meta title={AppConfig.title} description={AppConfig.description} />
     <Base>
       <Hero />
-      <VerticalFeatures />
+      <HowItWorks />
     </Base>
   </>
 );
