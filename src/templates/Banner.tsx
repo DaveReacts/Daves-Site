@@ -8,7 +8,7 @@ const Banner = () => (
   <Section yPadding="py-12">
     <CTABanner
       label="2 Free Offers Remaining"
-      title="Ready for a headache-free website?"
+      title="Get a simple, modern website without the tech headaches."
       button={
         <Link href="/contact">
           <Button>Request Your Website</Button>
