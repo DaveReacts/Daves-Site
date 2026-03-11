@@ -5,12 +5,13 @@ import { CTABanner } from '../cta/CTABanner';
 import { Section } from '../layout/Section';
 
 const Banner = () => (
-  <Section>
+  <Section yPadding="py-12">
     <CTABanner
+      label="2 Free Offers Remaining"
       title="Ready for a headache-free website?"
       button={
         <Link href="/contact">
-          <Button>Contact</Button>
+          <Button>Request Your Website</Button>
         </Link>
       }
     />

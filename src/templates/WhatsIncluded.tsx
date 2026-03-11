@@ -104,7 +104,7 @@ const WhatsIncluded = () => {
 
           <div className="mt-8 flex justify-center border-t border-gray-100 pt-6">
             <Link href="/contact">
-              <Button>Get started</Button>
+              <Button>Request Your Website</Button>
             </Link>
           </div>
         </div>

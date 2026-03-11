@@ -13,7 +13,7 @@ const Hero = () => (
         description="Hi, I'm Dave — a freelance web developer helping local businesses get clean, modern websites while I build my portfolio."
         button={
           <Link href="/contact">
-            <Button xl>Get Started</Button>
+            <Button xl>Request Your Website</Button>
           </Link>
         }
       />
