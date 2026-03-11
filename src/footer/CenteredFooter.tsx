@@ -9,15 +9,14 @@ type ICenteredFooterProps = {
 
 const CenteredFooter = (props: ICenteredFooterProps) => (
   <div className="text-center">
-    {props.logo}
-
     <nav>
-      <ul className="navbar mt-5 flex flex-row justify-center text-xl font-medium text-gray-800">
+      <ul className="navbar mt-4 flex flex-row items-center justify-center text-xl font-medium text-gray-800">
+        <li>{props.logo}</li>
         {props.children}
       </ul>
     </nav>
 
-    <div className="mt-8 text-sm">
+    <div className="mt-4 text-sm">
       <FooterCopyright />
     </div>
 
@@ -25,6 +24,14 @@ const CenteredFooter = (props: ICenteredFooterProps) => (
       {`
         .navbar :global(li) {
           @apply mx-4;
+        }
+
+        .navbar :global(a) {
+          @apply transition-colors duration-150;
+        }
+
+        .navbar :global(a:hover) {
+          @apply text-primary-500;
         }
       `}
     </style>

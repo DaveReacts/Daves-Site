@@ -7,7 +7,7 @@ import { Logo } from './Logo';
 
 const Footer = () => (
   <Background color="bg-gray-100">
-    <Section>
+    <Section yPadding="py-8">
       <CenteredFooter logo={<Logo />}>
         <li>
           <Link href="/">Home</Link>
