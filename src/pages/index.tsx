@@ -1,3 +1,4 @@
+import { AboutPreview } from '@/templates/AboutPreview';
 import { Hero } from '@/templates/Hero';
 import { HowItWorks } from '@/templates/HowItWorks';
 import { WhatsIncluded } from '@/templates/WhatsIncluded';
@@ -13,6 +14,7 @@ const Index = () => (
       <Hero />
       <HowItWorks />
       <WhatsIncluded />
+      <AboutPreview />
     </Base>
   </>
 );
