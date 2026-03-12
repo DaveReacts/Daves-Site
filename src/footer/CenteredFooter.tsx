@@ -9,12 +9,15 @@ type ICenteredFooterProps = {
 
 const CenteredFooter = (props: ICenteredFooterProps) => (
   <div className="text-center">
-    <nav>
-      <ul className="navbar mt-4 flex flex-row items-center justify-center text-xl font-medium text-gray-800">
-        <li>{props.logo}</li>
-        {props.children}
-      </ul>
-    </nav>
+    <div className="flex flex-col items-center justify-center gap-3 md:flex-row md:items-center md:justify-center">
+      <div className="mb-3 md:mb-0">{props.logo}</div>
+
+      <nav>
+        <ul className="navbar mt-1 flex flex-row justify-center text-xl font-medium text-gray-800 md:mt-0">
+          {props.children}
+        </ul>
+      </nav>
+    </div>
 
     <div className="mt-4 text-sm">
       <FooterCopyright />
