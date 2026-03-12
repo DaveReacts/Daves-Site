@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { useEffect, useRef, useState } from 'react';
 
 import { Background } from '../background/Background';
@@ -67,6 +68,16 @@ const AboutPreview = () => {
               If you&apos;re a local business owner who needs a simple website
               that works, I&apos;d love to help.
             </p>
+
+            <div className="mt-4">
+              <Link
+                href="/about"
+                className="inline-flex items-center text-base font-semibold text-primary-600 transition-colors hover:text-primary-700"
+              >
+                Read full about me
+                <span aria-hidden="true" className="ml-1 text-lg"></span>
+              </Link>
+            </div>
           </div>
         </div>
       </Section>
