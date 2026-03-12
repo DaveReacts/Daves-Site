@@ -45,8 +45,9 @@ const ContactForm = () => {
     <Section yPadding="pt-16 pb-24">
       <div className="mx-auto max-w-xl">
         <h1 className="mb-4 text-3xl font-bold text-gray-900">Contact Me</h1>
-        <p className="mb-8 text-gray-700">
-          Tell me a bit about what you need and how I can help.
+        <p className="mb-2 text-gray-700">
+          Tell me a bit about what you need and how I can help. I usually reply
+          within one business day.
         </p>
 
         <form onSubmit={handleSubmit} className="space-y-6">
@@ -136,6 +137,16 @@ const ContactForm = () => {
             </p>
           )}
         </form>
+        <p className="mt-8 text-sm text-gray-600">
+          Prefer email? You can reach me directly at{' '}
+          <a
+            href="mailto:dave@example.com"
+            className="font-medium text-primary-600 underline-offset-2 hover:text-primary-700 hover:underline"
+          >
+            dave@example.com
+          </a>
+          .
+        </p>
       </div>
     </Section>
   );
