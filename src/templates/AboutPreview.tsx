@@ -74,7 +74,7 @@ const AboutPreview = () => {
                 href="/about"
                 className="inline-flex items-center text-base font-semibold text-primary-600 transition-colors hover:text-primary-700"
               >
-                Read full about me
+                Read full About Me
                 <span aria-hidden="true" className="ml-1 text-lg"></span>
               </Link>
             </div>
