@@ -43,6 +43,7 @@ const WhatsIncluded = () => {
   return (
     <Background color="bg-gray-50">
       <Section
+        id="offer-details"
         title="What’s included"
         description="Everything you need for a simple, effective online presence—without the technical hassle."
       >
@@ -126,8 +127,12 @@ const WhatsIncluded = () => {
               </div>
             </div>
             <p className="mt-4 text-sm text-gray-600">
-              You only cover the ongoing domain and hosting costs (typically
-              around $10–20 per month, depending on the provider).
+              This is a limited portfolio offer: I handle the full design and
+              build while I grow my portfolio.
+            </p>
+            <p className="mt-1 text-sm text-gray-600">
+              You only cover your domain and hosting (typically around $10–20
+              per month, depending on the provider).
             </p>
             <p className="mt-1 text-sm text-gray-600">
               Behind the scenes, everything is built with modern tools so your
