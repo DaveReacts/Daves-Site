@@ -20,7 +20,7 @@ const Hero = () => (
         />
         <a
           href="#offer-details"
-          className="text-sm font-medium text-primary-500 underline-offset-2 hover:text-primary-600 hover:underline"
+          className="text-sm font-medium text-primary-500 hover:text-primary-700"
         >
           Full Offer Details
         </a>
