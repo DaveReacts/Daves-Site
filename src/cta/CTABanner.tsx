@@ -3,6 +3,7 @@ import type { ReactNode } from 'react';
 type ICTABannerProps = {
   title: string;
   label?: string;
+  subtitle?: string;
   button: ReactNode;
 };
 
@@ -15,6 +16,9 @@ const CTABanner = (props: ICTABannerProps) => (
         </p>
       )}
       <div className="text-gray-900">{props.title}</div>
+      {props.subtitle && (
+        <p className="text-sm font-normal text-gray-700">{props.subtitle}</p>
+      )}
     </div>
 
     <div className="mt-3 whitespace-nowrap sm:ml-2 sm:mt-0">{props.button}</div>

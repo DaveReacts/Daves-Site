@@ -42,6 +42,7 @@ const Banner = () => {
         <CTABanner
           label="2 Free Offers Remaining"
           title="Get a simple, modern website without the tech headaches."
+          subtitle="I handle the design and build — you just cover your domain and hosting."
           button={
             <Link href="/contact">
               <Button>Request Your Website</Button>

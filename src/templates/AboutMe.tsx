@@ -78,6 +78,12 @@ const AboutMe = () => {
                 because the goal isn&apos;t to sell you a website, it&apos;s to
                 build something that actually helps your business.
               </p>
+              <p className="text-base text-gray-600">
+                Under the hood, I use a modern tech stack (Next.js, React, and
+                Tailwind CSS). In practice, that just means your site loads
+                quickly, works well on phones, and can grow with your business
+                without needing to be rebuilt from scratch.
+              </p>
             </div>
           </div>
         </div>

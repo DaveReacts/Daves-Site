@@ -48,7 +48,7 @@ const WhatsIncluded = () => {
       >
         <div
           ref={containerRef}
-          className={`mx-auto max-w-3xl rounded-2xl border-t-4 border-primary-500 bg-white p-8 shadow-md ring-1 ring-gray-200 transition-all duration-700 ease-out ${
+          className={`mx-auto max-w-4xl rounded-2xl border-t-4 border-primary-500 bg-white p-8 shadow-md ring-1 ring-gray-200 transition-all duration-700 ease-out ${
             visible ? 'translate-y-0 opacity-100' : 'translate-y-6 opacity-0'
           }`}
         >
@@ -101,6 +101,40 @@ const WhatsIncluded = () => {
               </li>
             ))}
           </ul>
+          <div className="mt-6 pt-2 text-left text-gray-800">
+            <div className="mt-4 grid gap-8 md:grid-cols-2">
+              <div>
+                <h4 className="text-sm font-semibold uppercase tracking-wide text-gray-900">
+                  What I take care of
+                </h4>
+                <ul className="mt-3 space-y-2 text-sm leading-relaxed text-gray-700">
+                  <li>Planning a simple structure that fits your business.</li>
+                  <li>Designing and building your website for you.</li>
+                  <li>Setting up your contact form and basic SEO.</li>
+                  <li>Connecting your domain and launching the site.</li>
+                </ul>
+              </div>
+              <div>
+                <h4 className="text-sm font-semibold uppercase tracking-wide text-gray-900">
+                  What you&apos;ll handle
+                </h4>
+                <ul className="mt-3 space-y-2 text-sm leading-relaxed text-gray-700">
+                  <li>Paying for your domain name and hosting.</li>
+                  <li>Providing your logo, photos, and key details.</li>
+                  <li>Reviewing the draft and giving clear feedback.</li>
+                </ul>
+              </div>
+            </div>
+            <p className="mt-4 text-sm text-gray-600">
+              You only cover the ongoing domain and hosting costs (typically
+              around $10–20 per month, depending on the provider).
+            </p>
+            <p className="mt-1 text-sm text-gray-600">
+              Behind the scenes, everything is built with modern tools so your
+              site stays fast, secure, and easy to update as your business
+              grows.
+            </p>
+          </div>
 
           <div className="mt-8 flex justify-center border-t border-gray-100 pt-6">
             <Link href="/contact">
