@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import type { FormEvent } from 'react';
 import { useState } from 'react';
 
@@ -115,13 +116,36 @@ const ContactForm = () => {
             />
           </div>
 
-          <button
-            type="submit"
-            disabled={isSubmitting}
-            className="inline-flex items-center rounded-md bg-primary-500 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-primary-600 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 disabled:opacity-70"
-          >
-            {isSubmitting ? 'Sending...' : 'Send message'}
-          </button>
+          <div className="space-y-2">
+            <button
+              type="submit"
+              disabled={isSubmitting}
+              className="inline-flex items-center rounded-md bg-primary-500 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-primary-600 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 disabled:opacity-70"
+            >
+              {isSubmitting ? 'Sending...' : 'Send message'}
+            </button>
+            <p className="text-xs text-gray-500">
+              By submitting this form, you agree to the{' '}
+              <Link
+                href="/terms"
+                target="_blank"
+                rel="noreferrer"
+                className="font-medium text-primary-600 hover:text-primary-700"
+              >
+                Terms of Use
+              </Link>{' '}
+              and{' '}
+              <Link
+                href="/privacy"
+                target="_blank"
+                rel="noreferrer"
+                className="font-medium text-primary-600 hover:text-primary-700"
+              >
+                Privacy Policy
+              </Link>
+              .
+            </p>
+          </div>
 
           {hasSubmitted && (
             <p className="text-sm text-green-700">

@@ -1,7 +1,9 @@
+import Link from 'next/link';
+
 import { AppConfig } from '../utils/AppConfig';
 
 const FooterCopyright = () => (
-  <div className="footer-copyright">
+  <div className="footeropyright">
     <p className="text-xs text-gray-500">
       Questions? Email me at{' '}
       <a
@@ -14,6 +16,21 @@ const FooterCopyright = () => (
     </p>
     <p className="mt-1 text-xs text-gray-500">
       © Copyright {new Date().getFullYear()} {AppConfig.title}
+    </p>
+    <p className="mt-1 text-xs text-gray-500">
+      <Link
+        href="/privacy"
+        className="font-medium text-gray-600 hover:text-primary-600"
+      >
+        Privacy Policy
+      </Link>
+      <span className="mx-2">·</span>
+      <Link
+        href="/terms"
+        className="font-medium text-gray-600 hover:text-primary-600"
+      >
+        Terms of Use
+      </Link>
     </p>
   </div>
 );
