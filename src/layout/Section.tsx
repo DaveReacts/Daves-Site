@@ -8,6 +8,7 @@ type ISectionProps = {
   children: ReactNode;
 };
 
+// Reusable content wrapper that centers sections and optionally renders a heading/description.
 const Section = (props: ISectionProps) => (
   <div
     id={props.id}

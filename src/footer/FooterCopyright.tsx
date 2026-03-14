@@ -2,6 +2,7 @@ import Link from 'next/link';
 
 import { AppConfig } from '../utils/AppConfig';
 
+// Contact info, copyright line, and legal links shown at the very bottom of the site.
 const FooterCopyright = () => (
   <div className="footeropyright">
     <p className="text-xs text-gray-500">

@@ -5,6 +5,7 @@ import { CenteredFooter } from '../footer/CenteredFooter';
 import { Section } from '../layout/Section';
 import { Logo } from './Logo';
 
+// Global footer with centered logo and simple navigation back to core pages.
 const Footer = () => (
   <Background color="bg-gray-100">
     <Section yPadding="py-8">

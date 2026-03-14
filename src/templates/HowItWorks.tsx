@@ -16,6 +16,7 @@ const steps = [
   },
 ];
 
+// Simple three-step explainer showing the high-level project flow.
 const HowItWorks = () => (
   <section className="bg-black py-6 md:py-8">
     <div className="mx-auto max-w-screen-lg px-4">

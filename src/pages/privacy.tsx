@@ -4,6 +4,7 @@ import { Meta } from '../layout/Meta';
 import { Base } from '../templates/Base';
 import { AppConfig } from '../utils/AppConfig';
 
+// /privacy route that wraps the static PrivacyPolicy content in the global layout.
 export default function Privacy() {
   return (
     <>

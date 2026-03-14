@@ -1,6 +1,7 @@
 import { Background } from '../background/Background';
 import { Section } from '../layout/Section';
 
+// Static terms of use for the site. Update here if your legal terms change.
 const TermsOfUse = () => (
   <Background color="bg-gray-50">
     <Section yPadding="py-16">

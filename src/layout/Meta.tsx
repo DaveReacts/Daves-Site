@@ -10,6 +10,7 @@ type IMetaProps = {
   canonical?: string;
 };
 
+// Handles SEO metadata and Open Graph tags for each page.
 const Meta = (props: IMetaProps) => {
   const router = useRouter();
 

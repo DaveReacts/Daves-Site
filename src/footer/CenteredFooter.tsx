@@ -7,6 +7,7 @@ type ICenteredFooterProps = {
   children: ReactNode;
 };
 
+// Footer layout that centers the logo, navigation, and copyright block.
 const CenteredFooter = (props: ICenteredFooterProps) => (
   <div className="text-center">
     <div className="flex flex-col items-center justify-center gap-3 md:flex-row md:items-center md:justify-center">

@@ -6,6 +6,7 @@ type INavbarProps = {
   children: ReactNode;
 };
 
+// Simple two-column navbar layout: logo on the left, nav links on the right.
 const NavbarTwoColumns = (props: INavbarProps) => (
   <div className="flex flex-wrap items-center justify-between">
     <div>

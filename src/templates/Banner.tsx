@@ -10,6 +10,7 @@ const Banner = () => {
   const containerRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
+    // Fade the call-to-action banner in only after it scrolls into view.
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {

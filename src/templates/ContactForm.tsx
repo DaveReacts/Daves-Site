@@ -7,6 +7,7 @@ import { Section } from '../layout/Section';
 const FORMSPREE_ENDPOINT = 'https://formspree.io/f/mnjbrklb';
 
 const ContactForm = () => {
+  // Track submission lifecycle and whether the form container has animated into view.
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [hasSubmitted, setHasSubmitted] = useState(false);
   const [hasError, setHasError] = useState(false);
@@ -35,6 +36,7 @@ const ContactForm = () => {
     observer.observe(element);
   }, []);
 
+  // Submit the form data to Formspree and update UI state based on the response.
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     setIsSubmitting(true);
@@ -70,7 +72,7 @@ const ContactForm = () => {
     <Section yPadding="pt-16 pb-24">
       <div
         ref={containerRef}
-        className={`mx-auto max-w-xl transition-all duration-700 ease-out${visible ? 'translate-y-0 opacity-100' : 'translate-y-6 opacity-0'}`}
+        className={`mx-auto max-w-xl transition-all duration-700 ease-out ${visible ? 'translate-y-0 opacity-100' : 'translate-y-6 opacity-0'}`}
       >
         <h1 className="mb-4 text-3xl font-bold text-gray-900">Contact Me</h1>
         <p className="mb-2 text-gray-700">

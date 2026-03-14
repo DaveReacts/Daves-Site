@@ -7,6 +7,7 @@ import { Meta } from '../layout/Meta';
 import { Base } from '../templates/Base';
 import { AppConfig } from '../utils/AppConfig';
 
+// Marketing homepage that assembles the hero, explainer, offer details, and about preview.
 const Index = () => (
   <>
     <Meta title={AppConfig.title} description={AppConfig.description} />

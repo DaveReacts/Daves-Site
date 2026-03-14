@@ -8,6 +8,7 @@ type BaseProps = {
   children: ReactNode;
 };
 
+// Default page shell: sticky header, main content, persistent banner, and footer.
 const Base = ({ children }: BaseProps) => (
   <div className="text-gray-600 antialiased">
     <Header />

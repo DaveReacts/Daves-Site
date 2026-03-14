@@ -8,6 +8,7 @@ const AboutMe = () => {
   const containerRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
+    // Reveal the about section with a scroll-triggered fade/slide animation.
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {

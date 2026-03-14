@@ -4,6 +4,7 @@ import { Footer } from '../templates/Footer';
 import { Header } from '../templates/Header';
 import { AppConfig } from '../utils/AppConfig';
 
+// Contact page that directly composes the header, contact form, and footer without the extra banner.
 export default function Contact() {
   return (
     <>

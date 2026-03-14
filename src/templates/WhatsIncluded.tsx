@@ -19,6 +19,7 @@ const WhatsIncluded = () => {
   const containerRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
+    // Animate the package details card into view when the section becomes visible.
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {

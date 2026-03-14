@@ -4,6 +4,7 @@ type IFooterIconListProps = {
   children: ReactNode;
 };
 
+// Horizontal list helper for social or icon-based footer links.
 const FooterIconList = (props: IFooterIconListProps) => (
   <div className="footer-icon-list flex flex-wrap">
     {props.children}

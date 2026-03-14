@@ -1,6 +1,7 @@
 import { VerticalFeatureRow } from '../feature/VerticalFeatureRow';
 import { Section } from '../layout/Section';
 
+// Feature rows that explain benefits of the site, alternating image/text layout.
 const VerticalFeatures = () => (
   <Section
     title="A Website Built to Bring You Customers — Not Headaches"

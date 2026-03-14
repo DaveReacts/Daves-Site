@@ -9,6 +9,7 @@ const Header = () => {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
+    // Toggle a subtle shadow once the user has scrolled past the top of the page.
     const handleScroll = () => {
       setScrolled(window.scrollY > 10);
     };

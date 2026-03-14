@@ -1,6 +1,7 @@
 import { Background } from '../background/Background';
 import { Section } from '../layout/Section';
 
+// Static privacy policy content for the site. Keep this in sync with any external legal copy.
 const PrivacyPolicy = () => (
   <Background color="bg-gray-50">
     <Section yPadding="py-16">

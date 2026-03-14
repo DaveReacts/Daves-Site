@@ -5,6 +5,7 @@ import { Button } from '../button/Button';
 import { HeroOneButton } from '../hero/HeroOneButton';
 import { Section } from '../layout/Section';
 
+// Landing page hero describing the offer with a single primary CTA.
 const Hero = () => (
   <Background color="hero-bg">
     <Section yPadding="pt-20 pb-32">
