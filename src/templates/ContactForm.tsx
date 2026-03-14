@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import type { FormEvent } from 'react';
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 import { Section } from '../layout/Section';
 
@@ -10,6 +10,30 @@ const ContactForm = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [hasSubmitted, setHasSubmitted] = useState(false);
   const [hasError, setHasError] = useState(false);
+  const [visible, setVisible] = useState(false);
+
+  const containerRef = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    const element = containerRef.current;
+    if (!element) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setVisible(true);
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      {
+        threshold: 0.15,
+      },
+    );
+
+    observer.observe(element);
+  }, []);
 
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -44,7 +68,10 @@ const ContactForm = () => {
 
   return (
     <Section yPadding="pt-16 pb-24">
-      <div className="mx-auto max-w-xl">
+      <div
+        ref={containerRef}
+        className={`mx-auto max-w-xl transition-all duration-700 ease-out${visible ? 'translate-y-0 opacity-100' : 'translate-y-6 opacity-0'}`}
+      >
         <h1 className="mb-4 text-3xl font-bold text-gray-900">Contact Me</h1>
         <p className="mb-2 text-gray-700">
           Tell me a bit about what you need and how I can help. I usually reply
