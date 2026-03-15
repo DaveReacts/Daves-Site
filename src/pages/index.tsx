@@ -13,8 +13,8 @@ const Index = () => (
     <Meta title={AppConfig.title} description={AppConfig.description} />
     <Base>
       <Hero />
-      <HowItWorks />
       <WhatsIncluded />
+      <HowItWorks />
       <AboutPreview />
     </Base>
   </>

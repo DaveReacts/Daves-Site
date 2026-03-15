@@ -1,22 +1,26 @@
 const steps = [
   {
-    title: 'Step 1: Quick chat',
+    title: 'Step 1: Discovery & planning',
     description:
-      'We talk about your business, your goals, and what you want your website to do for you.',
+      'We talk through your business, goals, and audience, and you share any existing content or brand materials so we can define a clear plan.',
   },
   {
-    title: 'Step 2: I design & build',
+    title: 'Step 2: Proposal & agreement',
     description:
-      'I create a clean, modern website focused on turning visitors into customers.',
+      'I send a detailed proposal with scope, timeline, and pricing. Once you approve and sign a simple agreement, we lock in your project start date.',
   },
   {
-    title: 'Step 3: Launch & support',
+    title: 'Step 3: Design, build & feedback',
     description:
-      'We launch your site, and I handle hosting and updates so you can stay focused on your business.',
+      'I design and build your site in stages, sharing checkpoints so you can review, give feedback, and request revisions before anything goes live.',
+  },
+  {
+    title: 'Step 4: Launch & ongoing support',
+    description:
+      'We launch your site, connect your domain, and I handle technical setup, basic training, and ongoing support so you can focus on running your business.',
   },
 ];
 
-// Simple three-step explainer showing the high-level project flow.
 const HowItWorks = () => (
   <section className="bg-black py-6 md:py-8">
     <div className="mx-auto max-w-screen-lg px-4">
@@ -24,7 +28,7 @@ const HowItWorks = () => (
         How it works
       </h2>
 
-      <div className="mt-6 grid gap-8 text-white md:mt-8 md:grid-cols-3">
+      <div className="mt-6 grid grid-cols-1 gap-8 text-white sm:grid-cols-2 md:mt-8 lg:grid-cols-4">
         {steps.map((step, index) => (
           <div key={step.title} className="text-center">
             <div className="mx-auto mb-3 flex size-10 items-center justify-center rounded-full bg-white text-base font-semibold text-black md:size-12 md:text-lg">
