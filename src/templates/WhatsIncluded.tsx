@@ -45,7 +45,7 @@ const WhatsIncluded = () => {
     <Background color="bg-gray-50">
       <Section
         title="What’s included"
-        description="Everything you need for a simple, effective online presence—without the technical hassle."
+        description="Everything you need for a simple, professional website — without the technical hassle."
       >
         <div
           ref={containerRef}
@@ -55,11 +55,7 @@ const WhatsIncluded = () => {
         >
           <div className="mb-6">
             <p className="bg-primary-50 inline-flex items-center rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-wide text-primary-700">
-              Website package includes
-            </p>
-            <p className="mt-2 pl-3 text-sm text-gray-500 sm:text-base">
-              A simple, done-for-you setup so your business looks professional
-              online.
+              Your website includes:
             </p>
           </div>
 

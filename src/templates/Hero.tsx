@@ -9,7 +9,7 @@ const Hero = () => (
     <Section yPadding="pt-20 pb-32">
       <div className="flex flex-col items-center gap-4">
         <header className="space-y-6 text-center md:space-y-8">
-          <h1 className="text-5xl font-extrabold leading-hero text-[#1F2937]">
+          <h1 className="text-4xl font-extrabold leading-tight text-[#1F2937] md:text-5xl">
             A Clean, Professional Website for Your Small Business
           </h1>
           <div className="text-2xl md:text-3xl">
