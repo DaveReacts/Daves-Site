@@ -8,26 +8,25 @@ const Hero = () => (
   <Background color="hero-bg">
     <Section yPadding="pt-20 pb-32">
       <div className="flex flex-col items-center gap-4">
-        <header className="text-center">
-          <h1 className="text-5xl font-bold leading-hero text-gray-900">
-            Get a professional website for your small business
+        <header className="space-y-6 text-center md:space-y-8">
+          <h1 className="text-5xl font-extrabold leading-hero text-[#1F2937]">
+            A Clean, Professional Website for Your Business
           </h1>
-          <div className="mb-16 mt-4 text-2xl">
-            I’m offering a limited number of free business websites while I grow
-            my portfolio—built to make you look trustworthy online.
+          <div className="text-2xl md:text-3xl">
+            I’m offering a limited number of free websites for small businesses
+            while I grow my portfolio—built to make you look trustworthy online.
           </div>
 
-          <Link href="/contact">
-            <Button xl>Request Your Website</Button>
-          </Link>
+          <div className="flex flex-col items-center gap-3">
+            <Link href="/contact">
+              <Button xl>Request Your Website</Button>
+            </Link>
+            <p className="max-w-md text-sm text-gray-600">
+              No upfront cost. Just looking to work with 2-3 businesses while I
+              build my portfolio.
+            </p>
+          </div>
         </header>
-        <a
-          href="#offer-details"
-          className="text-sm font-medium text-primary-500 hover:text-primary-700"
-        >
-          See what’s included
-          <span aria-hidden="true">→</span>
-        </a>
       </div>
     </Section>
   </Background>

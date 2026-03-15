@@ -44,7 +44,6 @@ const WhatsIncluded = () => {
   return (
     <Background color="bg-gray-50">
       <Section
-        id="offer-details"
         title="What’s included"
         description="Everything you need for a simple, effective online presence—without the technical hassle."
       >
